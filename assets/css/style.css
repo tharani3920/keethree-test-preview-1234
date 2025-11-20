@@ -20251,11 +20251,13 @@ span.select2-selection.select2-selection--single:focus {
 .price-card {
     position: relative;
     background: var(--white-color);
-    padding: 40px;
+    padding: 20px 40px 40px;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
-    margin-top: 10px
+    margin-top: 10px;
 }
-
+.price-card-p{
+    color: var(--theme-color);
+}
 @media (max-width: 991px) {
     .price-card {
         padding: 30px
@@ -20281,7 +20283,28 @@ span.select2-selection.select2-selection--single:focus {
         margin-bottom: 60px
     }
 }
-
+.price-card_title.box-title {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.price-card_title.box-title::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 4px;
+    bottom: 0px;
+    left: 0;
+    background-color: var(--theme-color);
+    transition: width 0.8s ease;
+}
+.price-card:hover .price-card_title.box-title::before {
+    width: 100%;
+}
+.price-card_price i {
+    font-size: 44px;
+    margin-top: 10px;
+}
 .price-card .price-border {
     position: absolute;
     background-color: var(--theme-color);
@@ -33387,3 +33410,7 @@ p.service-box_text {
 
 @media (max-width: 575px) {
 }
+
+/* .custom-mission-text{
+    max-width: 270px;
+} */
