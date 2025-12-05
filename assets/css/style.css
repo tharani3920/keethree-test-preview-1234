@@ -33270,7 +33270,9 @@ p.service-box_text {
 }
 
 .contact-info-box {
-  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  /* background: linear-gradient(135deg, #3B82F6, #8B5CF6); */
+    background: radial-gradient(circle at top right, #ffffff 0%, #00b3e6 20%, #0082b6 45%, #00527a 70%, #002f4b 100%);
+
   color: #fff;
   border-radius: 12px;
   padding: 20px;
@@ -33356,9 +33358,11 @@ marquee.header-notice {
 .custom-bg {
     /* background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #000 100%); */
     background: radial-gradient(circle at top right, #ffffff 0%, #00b3e6 20%, #0082b6 45%, #00527a 70%, #002f4b 100%);
+    /* background-image: url("../images/ocean-blue.jpg"); */
 }
 .cus-bg{
-    background: linear-gradient(to right, #001E38 0%, #013A63 30%, #005F99 65%, #2E8BC0 100%);
+    /* background: linear-gradient(to right, #001E38 0%, #013A63 30%, #005F99 65%, #2E8BC0 100%); */
+    background-image: url("../images/ocean-blue.jpg");
 }
 .custom-blue {
     background-color: #032f4e;
